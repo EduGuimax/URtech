@@ -162,12 +162,12 @@ export default function ServicePage() {
             Converse com um de nossos especialistas e descubra como o {service.title.toLowerCase()} pode potencializar
             seus resultados.
           </p>
-          <a
-            href="#contato"
+          <Link
+            href="/#contact"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white rounded-lg font-semibold transition"
           >
             Entrar em Contato
-          </a>
+          </Link>
         </div>
       </div>
     </main>

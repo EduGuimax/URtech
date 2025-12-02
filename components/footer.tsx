@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, MapPin, Building2, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -54,16 +54,6 @@ export default function Footer() {
                   Portfólio
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition">
-                  Contato
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -74,14 +64,18 @@ export default function Footer() {
               <li className="flex gap-2 items-center">
                 <Mail size={16} className="text-blue-400" />
                 <a href="mailto:contato@urtech.com" className="hover:text-blue-400 transition">
-                  contato@urtech.com
+                  urtech.contato@gmail.com
                 </a>
               </li>
               <li className="flex gap-2 items-center">
-                <Phone size={16} className="text-blue-400" />
-                <a href="tel:+55" className="hover:text-blue-400 transition">
-                  +55 (XX) XXXX-XXXX
+                <Instagram size={16} className="text-pink-500" />
+                <a href="https://www.instagram.com/urtech_br/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+                  @urtech_br
                 </a>
+              </li>
+              <li className="flex gap-2 items-center">
+                <Building2 size={16} className="text-blue-400" />
+                <span className="hover:text-blue-400 transition">CNPJ: 62.707.330/0001-79</span>
               </li>
               <li className="flex gap-2 items-start">
                 <MapPin size={16} className="text-blue-400 mt-0.5 flex-shrink-0" />

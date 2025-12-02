@@ -30,7 +30,7 @@ export default function Hero() {
             especializados e soluções de manutenção científica com IA.
           </p>
 
-          <p className="text-sm sm:text-base text-slate-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-400 mb-8 max-w-4xl mx-auto leading-relaxed text-justify">
             Acreditamos que antes de apresentar soluções, é essencial compreender profundamente as necessidades e
             desafios específicos da sua empresa. Por isso, iniciamos cada parceria com um diagnóstico completo e
             detalhado, analisando seus processos, tecnologias e oportunidades de melhoria. Somente assim desenvolvemos

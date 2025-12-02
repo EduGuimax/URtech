@@ -6,19 +6,23 @@ const teamMembers = [
   {
     name: "Eduardo Guimarães",
     experience: "4 anos",
-    expertise: "Criação de software para design web, automação e desenvolvimento em ambiente fabril",
+    expertise: "Desenvolvimento de soluções de software voltadas para design web, automação de processos e otimização de operações em ambientes industriais.",
     initials: "EG",
+    // coloque a foto em `public/images/eduardo-guimaraes.png`
+    image: "/images/foto profissional .jpeg",
   },
   {
     name: "Raphael Urtiga",
     experience: "6 anos",
-    expertise: "Experiência na Jaguar Land Rover em inovação com grandes projetos de desenvolvimento de software",
+    expertise: "Experiência na Jaguar Land Rover atuando em iniciativas de inovação e no desenvolvimento de grandes projetos de software.",
     initials: "RU",
+    // coloque a foto em `public/images/raphael-urtiga.png`
+    image: "/images/raphael.jpg",
   },
   {
     name: "Jorge Fernandes",
     experience: "5 anos",
-    expertise: "Experiência na Jaguar Land Rover em criação de novos sistemas e automação para otimização de processos",
+    expertise: "Experiência na Jaguar Land Rover no desenvolvimento de novos sistemas e soluções de automação voltadas à otimização de processos.",
     initials: "JF",
   },
 ]
@@ -45,9 +49,19 @@ export default function Team() {
             >
               {/* Avatar */}
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-2xl font-bold">
-                  {member.initials}
-                </div>
+                {member.image ? (
+                  <div className="w-48 h-48 rounded-md overflow-hidden bg-slate-800 flex items-center justify-center shadow-md">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-contain object-center"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-48 h-48 rounded-md bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-4xl font-bold">
+                    {member.initials}
+                  </div>
+                )}
               </div>
 
               {/* Info */}

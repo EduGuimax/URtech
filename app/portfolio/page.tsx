@@ -33,7 +33,7 @@ const projects = [
     id: "drone-limpeza",
     title: "Drones para Limpeza e Pintura",
     category: "Drones",
-    image: "/drone-amarelo-profissional-limpeza.jpg",
+    image: "/images/drone-profissional.png",
     description: "Tecnologia de drones especializados para limpeza e pintura",
     features: [
       "Drones de alta precisão para superfícies verticais",

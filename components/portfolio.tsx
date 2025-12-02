@@ -34,13 +34,20 @@ export default function Portfolio() {
           {projects.map((project) => (
             <Link key={project.id} href={`/project/${project.id}`}>
               <div className="group bg-gradient-to-br from-slate-800 to-slate-900 border border-blue-500/20 hover:border-blue-500/60 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 cursor-pointer h-full">
-                <div className="aspect-video bg-gradient-to-br from-blue-600/20 to-cyan-600/20 flex items-center justify-center group-hover:from-blue-600/30 group-hover:to-cyan-600/30 transition-all">
-                  <div className="text-center">
-                    <div className="text-6xl font-bold text-blue-400 mb-2">
-                      {project.id === "dsp-engenharia" ? "DSP" : "🚁"}
-                    </div>
-                    <p className="text-slate-300">{project.category}</p>
-                  </div>
+                <div className="aspect-video bg-gradient-to-br from-blue-600/20 to-cyan-600/20 flex items-center justify-center group-hover:from-blue-600/30 group-hover:to-cyan-600/30 transition-all overflow-hidden">
+                  {project.id === "dsp-engenharia" ? (
+                    <img
+                      src="/images/dsp-logo.png"
+                      alt="Logo DSP Engenharia e Construções"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <img
+                      src="/images/drone-profissional.png"
+                      alt="Drone profissional para limpeza e pintura"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
 
                 <div className="p-8">

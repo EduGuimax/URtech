@@ -86,8 +86,9 @@ const projects = {
   },
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects[params.id as keyof typeof projects]
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const project = projects[id as keyof typeof projects]
 
   if (!project) {
     return (
@@ -102,8 +103,8 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     )
   }
 
-  const isDrone = params.id === "drone-services"
-  const isDSP = params.id === "dsp-engenharia"
+  const isDrone = id === "drone-services"
+  const isDSP = id === "dsp-engenharia"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
@@ -138,26 +139,34 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <div className="mx-auto max-w-6xl">
             <h3 className="text-3xl font-bold text-white mb-8">Sistema em Ação</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <img
-                src="/images/dsp-calendario.png"
-                alt="DSP Engenharia - Calendário de obras"
-                className="rounded-lg border border-blue-500/20 object-cover h-96 w-full"
-              />
-              <img
-                src="/images/dsp-pessoas.png"
-                alt="DSP Engenharia - Gestão de pessoas"
-                className="rounded-lg border border-blue-500/20 object-cover h-96 w-full"
-              />
-              <img
-                src="/images/dsp-deposito.png"
-                alt="DSP Engenharia - Sistema de depósitos"
-                className="rounded-lg border border-blue-500/20 object-cover h-96 w-full"
-              />
-              <img
-                src="/images/dsp-financeiro.png"
-                alt="DSP Engenharia - Gestão financeira"
-                className="rounded-lg border border-blue-500/20 object-cover h-96 w-full"
-              />
+              <div className="bg-slate-900/50 rounded-lg border border-blue-500/20 p-4 flex items-center justify-center min-h-96">
+                <img
+                  src="/images/dsp-calendario.png"
+                  alt="DSP Engenharia - Calendário de obras"
+                  className="max-w-full max-h-96 object-contain"
+                />
+              </div>
+              <div className="bg-slate-900/50 rounded-lg border border-blue-500/20 p-4 flex items-center justify-center min-h-96">
+                <img
+                  src="/images/dsp-pessoas.png"
+                  alt="DSP Engenharia - Gestão de pessoas"
+                  className="max-w-full max-h-96 object-contain"
+                />
+              </div>
+              <div className="bg-slate-900/50 rounded-lg border border-blue-500/20 p-4 flex items-center justify-center min-h-96">
+                <img
+                  src="/images/dsp-deposito.png"
+                  alt="DSP Engenharia - Sistema de depósitos"
+                  className="max-w-full max-h-96 object-contain"
+                />
+              </div>
+              <div className="bg-slate-900/50 rounded-lg border border-blue-500/20 p-4 flex items-center justify-center min-h-96">
+                <img
+                  src="/images/dsp-financeiro.png"
+                  alt="DSP Engenharia - Gestão financeira"
+                  className="max-w-full max-h-96 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
