@@ -79,7 +79,11 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 items-start">
                 <MapPin size={16} className="text-blue-400 mt-0.5 flex-shrink-0" />
-                <span>São Paulo, Brasil</span>
+                <span>São Paulo - SP, Brasil</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <MapPin size={16} className="text-blue-400 mt-0.5 flex-shrink-0" />
+                <span>Catalão - GO, Brasil</span>
               </li>
             </ul>
           </div>

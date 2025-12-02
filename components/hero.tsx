@@ -25,7 +25,7 @@ export default function Hero() {
             Soluções Inteligentes para sua Empresa
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-300 mb-6 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-300 mb-6 max-w-4xl mx-auto leading-relaxed text-justify">
             URTECH é sua parceira em inovação: desenvolvemos software exclusivos, automação inteligente, drones
             especializados e soluções de manutenção científica com IA.
           </p>
