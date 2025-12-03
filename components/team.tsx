@@ -24,6 +24,7 @@ const teamMembers = [
     experience: "5 anos",
     expertise: "Experiência na Jaguar Land Rover no desenvolvimento de novos sistemas e soluções de automação voltadas à otimização de processos.",
     initials: "JF",
+    image: "/images/jorge.png",
   },
 ]
 

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import BackButton from "@/components/back-button"
 
 export const metadata = {
   title: "Sobre Nós - URTECH",
@@ -9,6 +10,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-slate-950 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <BackButton className="text-blue-400 hover:text-cyan-400 transition mb-8" />
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Sobre a URTECH</h1>
           <div className="h-1 w-28 bg-gradient-to-r from-blue-500 to-cyan-500 rounded"></div>
