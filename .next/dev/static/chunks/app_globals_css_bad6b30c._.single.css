@@ -734,6 +734,10 @@
     margin-top: calc(var(--spacing) * 6);
   }
 
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
@@ -1137,6 +1141,10 @@
     width: calc(var(--spacing) * 20);
   }
 
+  .w-28 {
+    width: calc(var(--spacing) * 28);
+  }
+
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
@@ -1399,6 +1407,10 @@
 
   .scroll-py-1 {
     scroll-padding-block: calc(var(--spacing) * 1);
+  }
+
+  .list-inside {
+    list-style-position: inside;
   }
 
   .list-disc {

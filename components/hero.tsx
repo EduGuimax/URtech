@@ -25,12 +25,12 @@ export default function Hero() {
             Soluções Inteligentes para sua Empresa
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-300 mb-6 max-w-4xl mx-auto leading-relaxed text-justify">
+          <p className="text-lg sm:text-xl text-slate-300 mb-6 max-w-4xl mx-auto leading-relaxed">
             URTECH é sua parceira em inovação: desenvolvemos software exclusivos, automação inteligente, drones
             especializados e soluções de manutenção científica com IA.
           </p>
 
-          <p className="text-sm sm:text-base text-slate-400 mb-8 max-w-4xl mx-auto leading-relaxed text-justify">
+          <p className="text-sm sm:text-base text-slate-400 mb-8 max-w-4xl mx-auto leading-relaxed">
             Acreditamos que antes de apresentar soluções, é essencial compreender profundamente as necessidades e
             desafios específicos da sua empresa. Por isso, iniciamos cada parceria com um diagnóstico completo e
             detalhado, analisando seus processos, tecnologias e oportunidades de melhoria. Somente assim desenvolvemos

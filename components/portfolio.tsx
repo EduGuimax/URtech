@@ -22,7 +22,7 @@ export default function Portfolio() {
   ]
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-20 sm:py-32 bg-slate-900/50">
+    <section id="projetos" className="px-4 sm:px-6 lg:px-8 py-20 sm:py-32 bg-slate-900/50">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Nossos Projetos</h2>
@@ -115,6 +115,43 @@ export default function Portfolio() {
                         <span className="text-cyan-400 font-semibold">Resultado:</span> Eliminação completa de processos
                         em papel, aumento de 95% em eficiência operacional e redução significativa de erros
                         administrativos.
+                      </p>
+                    </div>
+                  )}
+
+                  {project.id === "drone-services" && (
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-white">Limpeza Aérea Profissional</p>
+                          <p className="text-sm text-slate-400">Limpeza de fachadas e estruturas com precisão e segurança</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-white">Pintura de Alta Qualidade</p>
+                          <p className="text-sm text-slate-400">Aplicação uniforme em áreas de difícil acesso sem riscos humanos</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-white">Redução de Custos e Tempo</p>
+                          <p className="text-sm text-slate-400">Operações mais rápidas e econômicas que métodos tradicionais</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {project.id === "drone-services" && (
+                    <div className="pt-6 border-t border-slate-700">
+                      <p className="text-sm text-slate-400 mb-4">
+                        <span className="text-cyan-400 font-semibold">Destaque:</span> Redução de até 70% no tempo de execução
+                        e maior segurança para operações em altura.
                       </p>
                     </div>
                   )}

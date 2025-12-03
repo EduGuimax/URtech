@@ -18,22 +18,22 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Serviços</h4>
             <ul className="space-y-2 text-slate-400 text-sm">
               <li>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="/service/software-exclusivos" className="hover:text-blue-400 transition">
                   Software Exclusivos
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="/service/automacao-processos" className="hover:text-blue-400 transition">
                   Automação
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="/service/integracao-sistemas" className="hover:text-blue-400 transition">
                   Gestão de Documentos
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="/service/drones-especializados" className="hover:text-blue-400 transition">
                   Drones
                 </a>
               </li>
@@ -45,12 +45,12 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">Empresa</h4>
             <ul className="space-y-2 text-slate-400 text-sm">
               <li>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="/about" className="hover:text-blue-400 transition">
                   Sobre Nós
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition">
+                <a href="/#projetos" className="hover:text-blue-400 transition">
                   Portfólio
                 </a>
               </li>
@@ -93,15 +93,6 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
             <p>&copy; 2025 URTECH. Todos os direitos reservados.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-blue-400 transition">
-                Privacidade
-              </a>
-              <a href="#" className="hover:text-blue-400 transition">
-                Termos
-              </a>
-              <a href="#" className="hover:text-blue-400 transition">
-                Cookies
-              </a>
             </div>
           </div>
         </div>

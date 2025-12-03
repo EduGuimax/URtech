@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 import { useParams } from "next/navigation"
+import BackButton from "@/components/back-button"
 
 const serviceDetails: Record<
   string,
@@ -105,9 +105,7 @@ export default function ServicePage() {
       <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-white mb-4">Serviço não encontrado</h1>
-          <Link href="/" className="text-blue-400 hover:text-cyan-400 transition">
-            Voltar para página inicial
-          </Link>
+          <BackButton className="text-blue-400 hover:text-cyan-400 transition">Voltar para página inicial</BackButton>
         </div>
       </div>
     )
@@ -117,10 +115,7 @@ export default function ServicePage() {
     <main className="min-h-screen bg-slate-950 py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Back Button */}
-        <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-400 transition mb-8">
-          <ArrowLeft size={20} />
-          Voltar
-        </Link>
+        <BackButton className="text-blue-400 hover:text-cyan-400 transition mb-8" />
 
         {/* Header */}
         <div className="mb-12">

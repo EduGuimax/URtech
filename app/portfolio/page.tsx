@@ -1,7 +1,7 @@
 "use client"
 
-import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import BackButton from "@/components/back-button"
 import { useState } from "react"
 
 const projects = [
@@ -110,10 +110,7 @@ export default function PortfolioPage() {
   return (
     <main className="min-h-screen bg-slate-950 pt-24">
       <div className="px-4 sm:px-6 lg:px-8 py-12">
-        <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8">
-          <ArrowLeft size={20} />
-          Voltar
-        </Link>
+        <BackButton className="text-blue-400 hover:text-blue-300 mb-8" />
 
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">

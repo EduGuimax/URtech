@@ -1,17 +1,14 @@
 "use client"
 
-import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import ContactForm from "@/components/contact-form"
+import BackButton from "@/components/back-button"
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-slate-950 pt-24">
       <div className="px-4 sm:px-6 lg:px-8 py-12">
-        <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8">
-          <ArrowLeft size={20} />
-          Voltar
-        </Link>
+        <BackButton className="text-blue-400 hover:text-blue-300 mb-8" />
 
         <div className="mx-auto max-w-2xl">
           <div className="text-center mb-12">
